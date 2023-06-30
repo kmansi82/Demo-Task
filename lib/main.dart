@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mydemo/UI/dashboard.dart';
+import 'package:mydemo/UI/signup_page.dart';
 
 void main() {
   runApp(const ProviderScope(
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
             // is not restarted.
             primarySwatch: Colors.blue,
           ),
-          home:  const DashBoard(),
+          home:  const SignupPage(),
         );
       }
     );

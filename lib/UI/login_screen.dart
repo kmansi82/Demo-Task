@@ -42,50 +42,56 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         backgroundColor: green,
         title: Text('Login'),
       ),
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 30.h),
-        child: Form(
-          key: _formKey,
-          child: ListView(
-            children: [
+      body: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () {
+          hideKeyboard(context);
+        },
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 30.h),
+          child: Form(
+            key: _formKey,
+            child: ListView(
+              children: [
 
-              /// UserName or Email Text Field
-              CommonInputFormField(
-                textEditingController: userNameOrEmailCTR,
-                scrollPadding: EdgeInsets.only(bottom: 125.h),
-                validator: (value) {
-                  return validateText(value, 'Username or email is required.');
-                },
-                placeholderText: "UserName or Email",
-              ),
-              /// Password Text Field
-              CommonInputFormField(
-                textEditingController: passwordCTR,
-                obscureText: true,
-                scrollPadding: EdgeInsets.only(bottom: 125.h),
-                validator: (value) {
-                  return validateText(value, 'Password is required.');
-                },
-                textInputAction: TextInputAction.done,
-                placeholderText: "Password",
-              ),
-
-              ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: green
-                  ),
-                  onPressed: (){
-                    var result = _formKey.currentState?.validate();
-                    if (result!) {
-                      hideKeyboard(context);
-
-                      Navigator.push(context, MaterialPageRoute(builder: (context) =>  const VerifyOtp()));
-                    }
+                /// UserName or Email Text Field
+                CommonInputFormField(
+                  textEditingController: userNameOrEmailCTR,
+                  scrollPadding: EdgeInsets.only(bottom: 125.h),
+                  validator: (value) {
+                    return validateText(value, 'Username or email is required.');
                   },
-                  child: Text('Sign Up'))
+                  placeholderText: "UserName or Email",
+                ),
+                /// Password Text Field
+                CommonInputFormField(
+                  textEditingController: passwordCTR,
+                  obscureText: true,
+                  scrollPadding: EdgeInsets.only(bottom: 125.h),
+                  validator: (value) {
+                    return validateText(value, 'Password is required.');
+                  },
+                  textInputAction: TextInputAction.done,
+                  placeholderText: "Password",
+                ),
+
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: green
+                    ),
+                    onPressed: (){
+                      var result = _formKey.currentState?.validate();
+                      if (result!) {
+                        hideKeyboard(context);
+
+                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  const VerifyOtp()));
+                      }
+                    },
+                    child: Text('Login'))
 
 
-            ],
+              ],
+            ),
           ),
         ),
       ),

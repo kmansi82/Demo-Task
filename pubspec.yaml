@@ -39,6 +39,7 @@ dependencies:
   dio:
   flutter_riverpod:
   pin_code_fields:
+  sqflite:
 
 dev_dependencies:
   flutter_test:
