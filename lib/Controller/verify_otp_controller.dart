@@ -17,8 +17,6 @@ class VerifyController extends ChangeNotifier {
     otpComplete = false;
     isLoading = false;
     isLoadingSubmitData = false;
-    // verifyMobileOtpResponseModel = null;
-    // resendOtpResponseModel = null;
     if (isNotify) {
       notifyListeners();
     }
@@ -42,18 +40,9 @@ class VerifyController extends ChangeNotifier {
     notifyListeners();
   }
 
-  void resendCode() {
-    //other code here
 
-    secondsRemaining = otpTimer;
-    enableResend = false;
-    notifyListeners();
-  }
 
-  void changeOtpField(value) {
-    currentText = value;
-    notifyListeners();
-  }
+
 
 
   /*
