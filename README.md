@@ -1,2 +1,9 @@
-# Demo
- 
+![Screenshot_1688131691](https://github.com/kmansi82/Demo-Task/assets/59315606/e4becc72-f2f2-456a-a4b7-5444560c7715)
+![Screenshot_1688131721](https://github.com/kmansi82/Demo-Task/assets/59315606/a2717bfa-62b8-4b0e-8b79-1777615723fa)
+![Screenshot_1688131733](https://github.com/kmansi82/Demo-Task/assets/59315606/3962bd66-5eb5-4c98-bed7-87aa14a9937f)
+![Screenshot_1688131739](https://github.com/kmansi82/Demo-Task/assets/59315606/78025d33-5aea-45f1-a592-7085af1b55d2)
+![Screenshot_1688131743](https://github.com/kmansi82/Demo-Task/assets/59315606/d00b80ae-6cc2-453b-8514-9f09ab2c0272)
+![Screenshot_1688131745](https://github.com/kmansi82/Demo-Task/assets/59315606/08bf673e-bb83-4e49-9669-1e7e67901dff)
+![Screenshot_1688131753](https://github.com/kmansi82/Demo-Task/assets/59315606/09da5459-ee7b-4926-9c25-19cc5d49f231)
+![Screenshot_1688131757](https://github.com/kmansi82/Demo-Task/assets/59315606/69ea1660-8d0b-4556-bec6-50707e66bc50)
+![Screenshot_1688132172](https://github.com/kmansi82/Demo-Task/assets/59315606/f4a574a3-1594-4866-9443-7a1322a31b00)
