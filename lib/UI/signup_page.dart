@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mydemo/Controller/signup_controller.dart';
 import 'package:mydemo/UI/login_screen.dart';
 import 'package:mydemo/Utils/Common_input_form_field.dart';
 import 'package:mydemo/Utils/app_constant.dart';
@@ -37,7 +36,7 @@ class _SignupPageState extends ConsumerState<SignupPage> {
   void initState() {
     super.initState();
     SchedulerBinding.instance.addPostFrameCallback((timeStamp) async {
-      final watch = ref.watch(signupPageController);
+      // final watch = ref.watch(signupPageController);
       db = UserDatabase();
     });
   }
@@ -52,7 +51,7 @@ class _SignupPageState extends ConsumerState<SignupPage> {
   ///Build
   @override
   Widget build(BuildContext context) {
-    final watch = ref.watch(signupPageController);
+    // final watch = ref.watch(signupPageController);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: green,
